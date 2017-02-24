@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+     <title>Photo shower</title>
+     <script type="text/javascript" charset="utf-8">
+       function photo() {
+          var photos = [
+            'http://a2.assets.nationalgeographic.es/soc_slider/24329.720x460.jpg',
+            'http://www.animalesraros.net/wp-content/uploads/2016/02/6-de-los-animales-m%C3%A1s-extra%C3%B1os-que-vas-a-ver-destacada-1-300x200.jpg',
+            'https://pacotraver.files.wordpress.com/2015/01/axolote.jpg',
+            'https://s-media-cache-ak0.pinimg.com/736x/00/11/89/001189a1b20a9595e01a1f56344f3cfa.jpg',
+            'https://s-media-cache-ak0.pinimg.com/originals/5f/7c/ad/5f7cadec6405ac2555fe4ceb3e50399f.jpg',
+            'https://gcdn.emol.cl/fotografia/files/2013/06/animales-bebes-07.jpg',
+            'http://cdn2.upsocl.com/wp-content/uploads/2015/11/725.jpg',
+            'https://www.recreoviral.com/wp-content/uploads/2015/04/Bebes-animales-hermosos-2.jpg',
+            'https://s-media-cache-ak0.pinimg.com/originals/a6/1d/8b/a61d8b1ba5077b5108da00ad28a60ef1.png',
+            'https://s-media-cache-ak0.pinimg.com/236x/6c/72/4a/6c724a5618b9f3eb120a81dc1e1bd653.jpg',
+            'https://s-media-cache-ak0.pinimg.com/564x/82/f6/84/82f68411f6d5f2399900d2dba30c6e91.jpg'
+          ]
+          var element = document.getElementById('tag');
+          var photoURL = photos[Math.floor(Math.random()*photos.length)]
+          element.innerHTML = '<img src="' + photoURL + '">';
+       }
+     </script>
+   </head>
+   <body>
+     <p>Do you want to see some photos? <a href="javascript:photo()">Just click here!</a></p>
+     <span id="tag"></span>
+     <script type="text/javascript" charset="utf-8">
+        photo();
+     </script>
+   </body>
+</html>
